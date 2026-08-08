@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tamilselvan P — Frontend & React Web Developer. Building beautiful, performant web experiences with modern technologies." />
+  <meta name="keywords" content="Tamilselvan, Frontend Developer, React Developer, Web Developer, Tamil Nadu, Portfolio" />
+  <meta name="author" content="Tamilselvan P" />
+  <meta property="og:title" content="Tamilselvan P | Frontend & React Developer" />
+  <meta property="og:description" content="Building beautiful, performant web experiences with React, JavaScript, and modern CSS." />
+  <title>Tamilselvan P | Frontend & React Web Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- Particle Background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ================================
+       NAVIGATION
+       ================================ -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="logo">TS.</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ================================
+       HERO SECTION
+       ================================ -->
+  <section id="hero">
+    <!-- Background Orbs -->
+    <div class="hero-bg-orb orb-1"></div>
+    <div class="hero-bg-orb orb-2"></div>
+    <div class="hero-bg-orb orb-3"></div>
+
+    <div class="hero-content">
+      <!-- Text Side -->
+      <div class="hero-text">
+        <div class="hero-greeting">
+          <span class="greeting-line"></span>
+          <span class="greeting-text">Hello, World! 👋</span>
+        </div>
+
+        <h1 class="hero-name">
+          <span class="first-name">Tamilselvan</span>
+          <span class="last-name">Palanisamy</span>
+        </h1>
+
+        <p class="hero-role">
+          <span id="typed-text"></span><span class="typed-cursor"></span>
+        </p>
+
+        <p class="hero-desc">
+          Passionate frontend developer crafting pixel-perfect, high-performance web experiences
+          with <strong>React.js</strong> and modern technologies. Turning ideas into elegant digital realities.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">
+            <i class="fas fa-rocket"></i> View My Work
+          </a>
+          <a href="#contact" class="btn-secondary">
+            <i class="fas fa-paper-plane"></i> Let's Talk
+          </a>
+        </div>
+
+        <div class="hero-social">
+          <a href="https://github.com/tamizh13570-creator" target="_blank" rel="noopener" class="social-link" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link" title="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" rel="noopener" class="social-link" title="Twitter">
+            <i class="fab fa-x-twitter"></i>
+          </a>
+          <a href="mailto:tamizh13570@gmail.com" class="social-link" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Visual Side -->
+      <div class="hero-visual">
+        <div class="hero-image-wrapper">
+          <div class="hero-image-glow"></div>
+          <div class="hero-image-ring"></div>
+          <div class="hero-image-ring-2"></div>
+          <img src="profile.jpg" alt="Tamilselvan P - Frontend Developer" class="hero-image" />
+
+          <!-- Floating Badges -->
+          <div class="hero-badge">
+            <div class="badge-icon">⚛️</div>
+            <div class="badge-text">
+              <strong>React Expert</strong>
+              <span>Frontend Specialist</span>
+            </div>
+          </div>
+
+          <div class="hero-badge hero-badge-2">
+            <div class="badge-icon">🚀</div>
+            <div class="badge-text">
+              <strong>20+ Projects</strong>
+              <span>Successfully Delivered</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ================================
+       ABOUT SECTION
+       ================================ -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <!-- Image Column -->
+        <div class="about-visual reveal-left">
+          <div class="about-image-frame">
+            <img src="profile.jpg" alt="Tamilselvan P" class="about-image" />
+            <div class="about-image-border"></div>
+            <div class="about-experience-badge">
+              <div class="exp-number">2+</div>
+              <div class="exp-label">Years of<br/>Experience</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content Column -->
+        <div class="about-content reveal-right">
+          <p class="about-intro">// about_me.js</p>
+          <h2 class="about-heading">
+            Crafting Digital <span>Experiences</span><br/>That Matter
+          </h2>
+
+          <p class="about-desc">
+            Hi! I'm <strong>Tamilselvan P</strong>, a passionate <strong>Frontend & React Web Developer</strong>
+            based in Tamil Nadu, India. I specialize in building modern, responsive, and highly interactive
+            web applications that deliver outstanding user experiences.
+          </p>
+          <p class="about-desc">
+            With a strong foundation in <strong>React.js, JavaScript (ES6+), HTML5, and CSS3</strong>,
+            I bridge the gap between design and technology — transforming complex wireframes into clean,
+            efficient, and scalable code. I'm deeply committed to writing maintainable code and keeping up
+            with the latest industry trends.
+          </p>
+
+          <!-- Stats -->
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number" data-target="20">0</div>
+              <div class="stat-label">Projects Done</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="2">0</div>
+              <div class="stat-label">Years Exp.</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number" data-target="10">0</div>
+              <div class="stat-label">Happy Clients</div>
+            </div>
+          </div>
+
+          <!-- Info List -->
+          <ul class="about-info-list">
+            <li><span>▸</span> <div><span>Name: </span><strong>Tamilselvan P</strong></div></li>
+            <li><span>▸</span> <div><span>Role: </span><strong>Frontend Developer</strong></div></li>
+            <li><span>▸</span> <div><span>Location: </span><strong>Tamil Nadu, India</strong></div></li>
+            <li><span>▸</span> <div><span>Available: </span><strong>Open to Work 🟢</strong></div></li>
+          </ul>
+
+          <a href="#contact" class="btn-primary" style="display:inline-flex">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================
+       SKILLS SECTION
+       ================================ -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// what I know</span>
+        <h2 class="section-title">My Technical <span>Skills</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="skills-wrapper">
+        <!-- Left: Skill Bars -->
+        <div class="skills-left reveal-left">
+          <p class="skills-intro">
+            I've worked with a wide range of technologies across the frontend stack.
+            Here's a snapshot of my core proficiencies and how comfortable I am with each one.
+          </p>
+
+          <div class="skill-bars">
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name"><span class="skill-icon">⚛️</span> React.js</span>
+                <span class="skill-bar-percent">92%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="92"></div></div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name"><span class="skill-icon">🟨</span> JavaScript (ES6+)</span>
+                <span class="skill-bar-percent">90%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="90"></div></div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name"><span class="skill-icon">🔷</span> TypeScript</span>
+                <span class="skill-bar-percent">78%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="78"></div></div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name"><span class="skill-icon">🎨</span> HTML5 & CSS3</span>
+                <span class="skill-bar-percent">95%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="95"></div></div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name"><span class="skill-icon">💨</span> Tailwind CSS</span>
+                <span class="skill-bar-percent">85%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name"><span class="skill-icon">🔴</span> Redux / Zustand</span>
+                <span class="skill-bar-percent">80%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+            </div>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-header">
+                <span class="skill-bar-name"><span class="skill-icon">🟢</span> Node.js & REST APIs</span>
+                <span class="skill-bar-percent">70%</span>
+              </div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Tech Cards -->
+        <div class="skills-right reveal-right">
+          <div class="tech-categories">
+            <div class="tech-category">
+              <div class="tech-category-title">Frontend Core</div>
+              <div class="tech-grid">
+                <div class="tech-card"><span class="tech-card-icon">⚛️</span><span class="tech-card-name">React</span></div>
+                <div class="tech-card"><span class="tech-card-icon">🟨</span><span class="tech-card-name">JavaScript</span></div>
+                <div class="tech-card"><span class="tech-card-icon">🔷</span><span class="tech-card-name">TypeScript</span></div>
+                <div class="tech-card"><span class="tech-card-icon">🌐</span><span class="tech-card-name">HTML5</span></div>
+              </div>
+            </div>
+
+            <div class="tech-category">
+              <div class="tech-category-title">Styling & UI</div>
+              <div class="tech-grid">
+                <div class="tech-card"><span class="tech-card-icon">🎨</span><span class="tech-card-name">CSS3</span></div>
+                <div class="tech-card"><span class="tech-card-icon">💨</span><span class="tech-card-name">Tailwind</span></div>
+                <div class="tech-card"><span class="tech-card-icon">💅</span><span class="tech-card-name">Styled Comp</span></div>
+                <div class="tech-card"><span class="tech-card-icon">🅱️</span><span class="tech-card-name">Bootstrap</span></div>
+              </div>
+            </div>
+
+            <div class="tech-category">
+              <div class="tech-category-title">Tools & Ecosystem</div>
+              <div class="tech-grid">
+                <div class="tech-card"><span class="tech-card-icon">🔴</span><span class="tech-card-name">Redux</span></div>
+                <div class="tech-card"><span class="tech-card-icon">📡</span><span class="tech-card-name">REST APIs</span></div>
+                <div class="tech-card"><span class="tech-card-icon">🐙</span><span class="tech-card-name">Git/GitHub</span></div>
+                <div class="tech-card"><span class="tech-card-icon">⚡</span><span class="tech-card-name">Vite</span></div>
+                <div class="tech-card"><span class="tech-card-icon">🧪</span><span class="tech-card-name">Jest</span></div>
+                <div class="tech-card"><span class="tech-card-icon">🟢</span><span class="tech-card-name">Node.js</span></div>
+                <div class="tech-card"><span class="tech-card-icon">🎭</span><span class="tech-card-name">Figma</span></div>
+                <div class="tech-card"><span class="tech-card-icon">🔥</span><span class="tech-card-name">Firebase</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================
+       PROJECTS SECTION
+       ================================ -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// my work</span>
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="projects-filter reveal">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="react">React</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="ui">UI/UX</button>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1: Todo AI App -->
+        <div class="project-card reveal delay-1" data-category="react">
+          <div class="project-image-wrapper">
+            <div style="width:100%;height:200px;background:linear-gradient(135deg,#0d001a,#001a2e);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.5rem;">
+              <span style="font-size:3.5rem;">✅</span>
+              <span style="font-size:0.75rem;color:rgba(168,85,247,0.8);letter-spacing:2px;text-transform:uppercase;font-family:monospace;">AI Powered</span>
+            </div>
+            <div class="project-overlay">
+              <a href="https://tamizh13570-creator.github.io/todo-app-ai/" target="_blank" rel="noopener" class="project-link-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="https://github.com/tamizh13570-creator" target="_blank" rel="noopener" class="project-link-btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">AI</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">GitHub Pages</span>
+            </div>
+            <h3 class="project-title">Todo App AI — Smart Task Manager</h3>
+            <p class="project-desc">
+              An AI-powered todo application that helps manage tasks intelligently. Features smart task suggestions, priority management, and a clean intuitive interface built with React.
+            </p>
+            <div class="project-footer">
+              <span class="project-meta"><i class="fas fa-star" style="color:#f59e0b"></i> Live Project</span>
+              <div class="project-links">
+                <a href="https://github.com/tamizh13570-creator" target="_blank" rel="noopener" class="project-icon-link"><i class="fab fa-github"></i></a>
+                <a href="https://tamizh13570-creator.github.io/todo-app-ai/" target="_blank" rel="noopener" class="project-icon-link"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2: Leafy Sorbet -->
+        <div class="project-card reveal delay-2" data-category="ui fullstack">
+          <div class="project-image-wrapper">
+            <div style="width:100%;height:200px;background:linear-gradient(135deg,#001a08,#0a1a10);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.5rem;">
+              <span style="font-size:3.5rem;">🍃</span>
+              <span style="font-size:0.75rem;color:rgba(6,182,212,0.8);letter-spacing:2px;text-transform:uppercase;font-family:monospace;">Netlify Deployed</span>
+            </div>
+            <div class="project-overlay">
+              <a href="https://67bf35650a47099f39d767cd--leafy-sorbet-06e6d9.netlify.app" target="_blank" rel="noopener" class="project-link-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="https://github.com/tamizh13570-creator" target="_blank" rel="noopener" class="project-link-btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">HTML/CSS</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">Netlify</span>
+            </div>
+            <h3 class="project-title">Leafy Sorbet — Web Application</h3>
+            <p class="project-desc">
+              A beautifully designed web application deployed on Netlify. Features a modern layout with smooth interactions, responsive design, and polished user experience.
+            </p>
+            <div class="project-footer">
+              <span class="project-meta"><i class="fas fa-star" style="color:#f59e0b"></i> Live Project</span>
+              <div class="project-links">
+                <a href="https://github.com/tamizh13570-creator" target="_blank" rel="noopener" class="project-icon-link"><i class="fab fa-github"></i></a>
+                <a href="https://67bf35650a47099f39d767cd--leafy-sorbet-06e6d9.netlify.app" target="_blank" rel="noopener" class="project-icon-link"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3: Perfume Site -->
+        <div class="project-card reveal delay-3" data-category="ui">
+          <div class="project-image-wrapper">
+            <div style="width:100%;height:200px;background:linear-gradient(135deg,#1a0a10,#1a0528);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:0.5rem;">
+              <span style="font-size:3.5rem;">🌸</span>
+              <span style="font-size:0.75rem;color:rgba(236,72,153,0.8);letter-spacing:2px;text-transform:uppercase;font-family:monospace;">GitHub Pages</span>
+            </div>
+            <div class="project-overlay">
+              <a href="https://tamizh13570-creator.github.io/perfume/" target="_blank" rel="noopener" class="project-link-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="https://github.com/tamizh13570-creator" target="_blank" rel="noopener" class="project-link-btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">HTML/CSS</span>
+              <span class="project-tag">JavaScript</span>
+              <span class="project-tag">UI Design</span>
+              <span class="project-tag">GitHub Pages</span>
+            </div>
+            <h3 class="project-title">Perfume — Luxury Brand Website</h3>
+            <p class="project-desc">
+              An elegant luxury perfume brand website featuring stunning product showcases, smooth scroll animations, premium typography, and a sophisticated dark aesthetic design.
+            </p>
+            <div class="project-footer">
+              <span class="project-meta"><i class="fas fa-star" style="color:#f59e0b"></i> Live Project</span>
+              <div class="project-links">
+                <a href="https://github.com/tamizh13570-creator" target="_blank" rel="noopener" class="project-icon-link"><i class="fab fa-github"></i></a>
+                <a href="https://tamizh13570-creator.github.io/perfume/" target="_blank" rel="noopener" class="project-icon-link"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal delay-4" data-category="fullstack react">
+          <div class="project-image-wrapper">
+            <div style="width:100%;height:200px;background:linear-gradient(135deg,#1a1000,#1a0a05);display:flex;align-items:center;justify-content:center;font-size:4rem;">
+              💬
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="project-link-btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Socket.io</span>
+              <span class="project-tag">Node.js</span>
+            </div>
+            <h3 class="project-title">ChatSphere — Real-time Chat App</h3>
+            <p class="project-desc">
+              A blazing-fast real-time chat application with rooms, private messages, emoji reactions, file sharing, and online presence indicators using WebSockets.
+            </p>
+            <div class="project-footer">
+              <span class="project-meta"><i class="fas fa-star" style="color:#f59e0b"></i> 4.9 / 5.0</span>
+              <div class="project-links">
+                <a href="#" class="project-icon-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="project-icon-link"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card reveal delay-5" data-category="ui">
+          <div class="project-image-wrapper">
+            <div style="width:100%;height:200px;background:linear-gradient(135deg,#001a1a,#001020);display:flex;align-items:center;justify-content:center;font-size:4rem;">
+              📊
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="project-link-btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Chart.js</span>
+              <span class="project-tag">Styled Comp</span>
+            </div>
+            <h3 class="project-title">Analytix — Admin Dashboard</h3>
+            <p class="project-desc">
+              A comprehensive admin dashboard with interactive analytics charts, data tables, user management, dark mode, and responsive grid layouts using React + Chart.js.
+            </p>
+            <div class="project-footer">
+              <span class="project-meta"><i class="fas fa-star" style="color:#f59e0b"></i> 4.8 / 5.0</span>
+              <div class="project-links">
+                <a href="#" class="project-icon-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="project-icon-link"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card reveal delay-2" data-category="react">
+          <div class="project-image-wrapper">
+            <div style="width:100%;height:200px;background:linear-gradient(135deg,#0a001a,#001520);display:flex;align-items:center;justify-content:center;font-size:4rem;">
+              🎵
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="project-link-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="project-link-btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">React</span>
+              <span class="project-tag">Spotify API</span>
+              <span class="project-tag">CSS Animations</span>
+            </div>
+            <h3 class="project-title">Melodia — Music Player UI</h3>
+            <p class="project-desc">
+              A stunning Spotify-inspired music player with smooth animations, waveform visualizer, playlist management, search functionality, and Spotify API integration.
+            </p>
+            <div class="project-footer">
+              <span class="project-meta"><i class="fas fa-star" style="color:#f59e0b"></i> 5.0 / 5.0</span>
+              <div class="project-links">
+                <a href="#" class="project-icon-link"><i class="fab fa-github"></i></a>
+                <a href="#" class="project-icon-link"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================
+       EXPERIENCE SECTION
+       ================================ -->
+  <section id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// my journey</span>
+        <h2 class="section-title">Work <span>Experience</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-content">
+            <div class="timeline-period">🗓 Jan 2024 – Present</div>
+            <div class="timeline-role">Junior Frontend Developer</div>
+            <div class="timeline-company">Tech Startup, Chennai</div>
+            <div class="timeline-desc">
+              Building and maintaining React-based web applications. Collaborating with UI/UX designers to implement pixel-perfect interfaces. Optimizing page performance achieving 40% faster load times. Leading feature development for client-facing dashboards.
+            </div>
+          </div>
+          <div class="timeline-dot">
+            <div class="timeline-dot-inner"></div>
+          </div>
+          <div class="timeline-spacer"></div>
+        </div>
+
+        <div class="timeline-item reveal delay-1">
+          <div class="timeline-spacer"></div>
+          <div class="timeline-dot">
+            <div class="timeline-dot-inner"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-period">🗓 Jun 2023 – Dec 2023</div>
+            <div class="timeline-role">Frontend Developer Intern</div>
+            <div class="timeline-company">Digital Agency, Coimbatore</div>
+            <div class="timeline-desc">
+              Developed responsive landing pages and client websites using HTML, CSS, JavaScript, and React. Integrated third-party APIs and implemented REST API consumption. Gained hands-on experience with agile workflows and code reviews.
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal delay-2">
+          <div class="timeline-content">
+            <div class="timeline-period">🗓 2020 – 2024</div>
+            <div class="timeline-role">B.Sc Computer Science</div>
+            <div class="timeline-company">University, Tamil Nadu</div>
+            <div class="timeline-desc">
+              Completed Bachelor's degree in Computer Science. Built multiple academic projects with JavaScript and React. Active member of the college coding club, participated in multiple hackathons and coding competitions.
+            </div>
+          </div>
+          <div class="timeline-dot">
+            <div class="timeline-dot-inner"></div>
+          </div>
+          <div class="timeline-spacer"></div>
+        </div>
+
+        <div class="timeline-item reveal delay-3">
+          <div class="timeline-spacer"></div>
+          <div class="timeline-dot">
+            <div class="timeline-dot-inner"></div>
+          </div>
+          <div class="timeline-content">
+            <div class="timeline-period">🗓 2022 – 2023</div>
+            <div class="timeline-role">Freelance Web Developer</div>
+            <div class="timeline-company">Self-Employed</div>
+            <div class="timeline-desc">
+              Delivered 10+ freelance projects for local businesses including portfolio websites, business pages, and web apps. Gained experience in client communication, project estimation, and end-to-end delivery.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================
+       CONTACT SECTION
+       ================================ -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">// get in touch</span>
+        <h2 class="section-title">Let's Work <span>Together</span></h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="contact-wrapper">
+        <!-- Contact Info -->
+        <div class="contact-info reveal-left">
+          <h3 class="contact-heading">
+            Ready to build something <span>amazing</span> together?
+          </h3>
+          <p class="contact-desc">
+            I'm currently open to frontend developer roles, freelance projects, and interesting collaborations.
+            Whether you have a project in mind or just want to say hello — my inbox is always open!
+          </p>
+
+          <div class="contact-items">
+            <a href="mailto:tamizh13570@gmail.com" class="contact-item">
+              <div class="contact-item-icon">📧</div>
+              <div class="contact-item-info">
+                <div class="contact-item-label">Email</div>
+                <div class="contact-item-value">tamizh13570@gmail.com</div>
+              </div>
+            </a>
+            <a href="tel:+918608504193" class="contact-item">
+              <div class="contact-item-icon">📱</div>
+              <div class="contact-item-info">
+                <div class="contact-item-label">Phone</div>
+                <div class="contact-item-value">+91 86085 04193</div>
+              </div>
+            </a>
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div class="contact-item-info">
+                <div class="contact-item-label">Location</div>
+                <div class="contact-item-value">Tamil Nadu, India</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-social">
+            <a href="https://github.com/tamizh13570-creator" target="_blank" rel="noopener" class="contact-social-link">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-social-link">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="mailto:tamizh13570@gmail.com" class="contact-social-link">
+              <i class="fas fa-envelope"></i> Email Me
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrapper reveal-right">
+          <div class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" placeholder="John Doe" autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" placeholder="john@example.com" autocomplete="email" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" placeholder="Project Collaboration / Job Offer / General" />
+            </div>
+            <div class="form-group">
+              <label for="contact-budget">Budget Range</label>
+              <select id="contact-budget">
+                <option value="" disabled selected>Select budget range</option>
+                <option value="small">₹5K – ₹15K</option>
+                <option value="medium">₹15K – ₹50K</option>
+                <option value="large">₹50K – ₹1L</option>
+                <option value="enterprise">₹1L+</option>
+                <option value="fulltime">Full-time Employment</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Your Message</label>
+              <textarea id="contact-message" placeholder="Tell me about your project, requirements, timeline..."></textarea>
+            </div>
+            <button type="submit" class="form-submit" id="form-submit-btn">
+              <i class="fas fa-paper-plane"></i>&nbsp; Send Message
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================
+       FOOTER
+       ================================ -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <a href="#hero" class="footer-logo">TS.</a>
+        <p class="footer-text">
+          Crafted with <span>♥</span> by Tamilselvan P &copy; 2026. All rights reserved.
+        </p>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
